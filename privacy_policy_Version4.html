@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Privacy Policy — NewsAG</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 2rem auto; line-height:1.6; padding: 0 1rem; color:#111; }
+    h1,h2 { color: #111; }
+    a { color: #1a73e8; }
+    section { margin-bottom: 1rem; }
+    ul { margin-top: 0.25rem; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy for NewsAG</h1>
+  <p><strong>Effective date:</strong> 2025-12-14</p>
+
+  <p>This Privacy Policy describes how GlitchedNeon ("we", "us", or "our") collects, uses, and shares information when you use the NewsAG mobile application ("App"). By downloading or using the App, you agree to the collection and use of information in accordance with this policy.</p>
+
+  <h2>Information we collect</h2>
+  <section>
+    <p><strong>Personal information you provide:</strong> The App does not require you to sign in and does not collect personal information from you through the App. If you contact us via email, providing your email address is voluntary.</p>
+
+    <p><strong>Automatically collected information:</strong></p>
+    <ul>
+      <li>Device information (model, OS version).</li>
+      <li>Usage data and analytics collected by the advertising SDK.</li>
+      <li>Advertising identifiers (Advertising ID on Android, IDFA on iOS).</li>
+      <li>Crash reports and performance data only if such SDKs are included.</li>
+    </ul>
+
+    <p><strong>Location data:</strong> The App does not collect precise location. Approximate location may be inferred by ad providers to serve relevant ads.</p>
+  </section>
+
+  <h2>How we use information</h2>
+  <section>
+    <p>We use information to provide, maintain, and improve the App; serve and personalize ads; monitor and analyze usage; troubleshoot issues; and communicate with you if you contact us.</p>
+  </section>
+
+  <h2>Ads and third-party advertising providers</h2>
+  <section>
+    <p>The App displays ads. The only advertising SDK used by NewsAG is <strong>Google AdMob</strong>. AdMob may collect advertising identifiers, device and usage data, and general location to serve personalized ads. To opt out of personalized ads, use your device-level ad settings (Android: Ads settings; iOS: Limit Ad Tracking / Ad Personalization settings).</p>
+  </section>
+
+  <h2>Third-party SDKs and services</h2>
+  <section>
+    <p>The App includes the Google AdMob SDK for advertising. No other analytics or crash-reporting SDKs are included unless you are otherwise notified. (Android Studio is the development IDE and is not a data collection SDK.)</p>
+  </section>
+
+  <h2>Sharing of information</h2>
+  <section>
+    <p>We may share data with service providers (e.g., ad networks), advertising partners, and law enforcement when required by law. We will not sell your personal information for money.</p>
+  </section>
+
+  <h2>Data retention</h2>
+  <section>
+    <p>We retain personal data only as long as necessary to fulfill the purposes described. Usage/analytics data may be retained in aggregated or anonymized form by third parties.</p>
+  </section>
+
+  <h2>Security</h2>
+  <section>
+    <p>We implement reasonable measures to protect your information, but cannot guarantee absolute security.</p>
+  </section>
+
+  <h2>Your rights and choices</h2>
+  <section>
+    <p>Contact pizzownzore@gmail.com to request access or correction of any personal data you provided. To opt out of personalized advertising, use your device-level ad settings. If GDPR/CCPA apply, you may have additional rights — contact us at pizzownzore@gmail.com.</p>
+  </section>
+
+  <h2>Children’s privacy</h2>
+  <section>
+    <p>The App is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe we have collected such information, contact us and we will delete it.</p>
+  </section>
+
+  <h2>Changes to this policy</h2>
+  <section>
+    <p>We may update this policy and will post any changes with a new effective date. Continued use of the App after changes means you accept the revised policy.</p>
+  </section>
+
+  <h2>Contact us</h2>
+  <section>
+    <p>GlitchedNeon<br>Email: <a href="mailto:pizzownzore@gmail.com">pizzownzore@gmail.com</a></p>
+    <p>Last updated: 2025-12-14</p>
+  </section>
+</body>
+</html>
