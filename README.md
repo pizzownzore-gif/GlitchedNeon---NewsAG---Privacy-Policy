@@ -1,87 +1,74 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Privacy Policy — NewsAG</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: 2rem auto; line-height:1.6; padding: 0 1rem; color:#111; }
-    h1,h2 { color: #111; }
-    a { color: #1a73e8; }
-    section { margin-bottom: 1rem; }
-    ul { margin-top: 0.25rem; }
-  </style>
-</head>
-<body>
-  <h1>Privacy Policy for NewsAG</h1>
-  <p><strong>Effective date:</strong> 2025-12-14</p>
+# NewsAG
 
-  <p>This Privacy Policy describes how GlitchedNeon ("we", "us", or "our") collects, uses, and shares information when you use the NewsAG mobile application ("App"). By downloading or using the App, you agree to the collection and use of information in accordance with this policy.</p>
+NewsAG is a lightweight Android news reader app by GlitchedNeon. It displays news content and shows ads using Google AdMob. This repository contains the app source and a simple privacy policy you can host and link from your store listing.
 
-  <h2>Information we collect</h2>
-  <section>
-    <p><strong>Personal information you provide:</strong> The App does not require you to sign in and does not collect personal information from you through the App. If you contact us via email, providing your email address is voluntary.</p>
+Last updated: 2025-12-14  
+Contact: pizzownzore@gmail.com
 
-    <p><strong>Automatically collected information:</strong></p>
-    <ul>
-      <li>Device information (model, OS version).</li>
-      <li>Usage data and analytics collected by the advertising SDK.</li>
-      <li>Advertising identifiers (Advertising ID on Android, IDFA on iOS).</li>
-      <li>Crash reports and performance data only if such SDKs are included.</li>
-    </ul>
+## Features
+- Clean, minimal news reader UI
+- Ad monetization via Google AdMob
+- No sign-in required
+- Does not collect personal data beyond standard advertising identifiers used by AdMob
 
-    <p><strong>Location data:</strong> The App does not collect precise location. Approximate location may be inferred by ad providers to serve relevant ads.</p>
-  </section>
+## Privacy
+A privacy policy is included as `privacy_policy.html` and `privacy_policy.md`. Host one of those files at a public HTTPS URL and add the URL to your Play Store / App Store listing.
 
-  <h2>How we use information</h2>
-  <section>
-    <p>We use information to provide, maintain, and improve the App; serve and personalize ads; monitor and analyze usage; troubleshoot issues; and communicate with you if you contact us.</p>
-  </section>
+If you need to host the policy quickly:
+- GitHub Pages
+  1. Create a public GitHub repository (or use this repo).
+  2. Commit `privacy_policy.html` to the repository root (or to `docs/`).
+  3. In the repository Settings → Pages, choose the branch and folder (`/ (root)` or `/docs`) and enable Pages.
+  4. The policy will be available at: `https://<github-username>.github.io/<repo>/privacy_policy.html`
 
-  <h2>Ads and third-party advertising providers</h2>
-  <section>
-    <p>The App displays ads. The only advertising SDK used by NewsAG is <strong>Google AdMob</strong>. AdMob may collect advertising identifiers, device and usage data, and general location to serve personalized ads. To opt out of personalized ads, use your device-level ad settings (Android: Ads settings; iOS: Limit Ad Tracking / Ad Personalization settings).</p>
-  </section>
+- Firebase Hosting
+  1. Install Firebase CLI and run `firebase init hosting`.
+  2. Place `privacy_policy.html` in the `public/` folder.
+  3. Run `firebase deploy --only hosting` and use the provided HTTPS URL.
 
-  <h2>Third-party SDKs and services</h2>
-  <section>
-    <p>The App includes the Google AdMob SDK for advertising. No other analytics or crash-reporting SDKs are included unless you are otherwise notified. (Android Studio is the development IDE and is not a data collection SDK.)</p>
-  </section>
+## Getting started (Android)
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/<your-username>/<repo>.git
+   cd <repo>
+   ```
 
-  <h2>Sharing of information</h2>
-  <section>
-    <p>We may share data with service providers (e.g., ad networks), advertising partners, and law enforcement when required by law. We will not sell your personal information for money.</p>
-  </section>
+2. Open in Android Studio:
+   - File → Open → select the project directory.
 
-  <h2>Data retention</h2>
-  <section>
-    <p>We retain personal data only as long as necessary to fulfill the purposes described. Usage/analytics data may be retained in aggregated or anonymized form by third parties.</p>
-  </section>
+3. Configure AdMob:
+   - Add your AdMob App ID to `AndroidManifest.xml` (replace the placeholder):
+     ```xml
+     <meta-data
+       android:name="com.google.android.gms.ads.APPLICATION_ID"
+       android:value="ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY"/>
+     ```
+   - Replace sample ad unit IDs in the code/layouts with your real ad unit IDs.
 
-  <h2>Security</h2>
-  <section>
-    <p>We implement reasonable measures to protect your information, but cannot guarantee absolute security.</p>
-  </section>
+4. Build & Run:
+   - Use a real device or emulator and Run the app from Android Studio.
 
-  <h2>Your rights and choices</h2>
-  <section>
-    <p>Contact pizzownzore@gmail.com to request access or correction of any personal data you provided. To opt out of personalized advertising, use your device-level ad settings. If GDPR/CCPA apply, you may have additional rights — contact us at pizzownzore@gmail.com.</p>
-  </section>
+Notes:
+- Use test ad units while developing to avoid policy violations (see AdMob docs).
+- Android Studio is the IDE used to develop the app; it is not a data-collection SDK.
 
-  <h2>Children’s privacy</h2>
-  <section>
-    <p>The App is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe we have collected such information, contact us and we will delete it.</p>
-  </section>
+## Project structure (example)
+- app/                       — Android app module
+- privacy_policy.html        — Ready-to-host HTML privacy policy
+- privacy_policy.md          — Markdown privacy policy
+- README.md                  — This file
 
-  <h2>Changes to this policy</h2>
-  <section>
-    <p>We may update this policy and will post any changes with a new effective date. Continued use of the App after changes means you accept the revised policy.</p>
-  </section>
+## Privacy and compliance notes
+- The app uses Google AdMob for advertising. AdMob may collect advertising identifiers, device and usage data, and approximate location to serve ads.
+- The app does not require sign-in and does not collect personal data other than what AdMob may collect.
+- You must link to the hosted privacy policy in your Play Store / App Store listing to comply with store requirements.
 
-  <h2>Contact us</h2>
-  <section>
-    <p>GlitchedNeon<br>Email: <a href="mailto:pizzownzore@gmail.com">pizzownzore@gmail.com</a></p>
-    <p>Last updated: 2025-12-14</p>
-  </section>
-</body>
-</html>
+## Contributing
+Contributions are welcome. Open an issue or submit a pull request with proposed changes.
+
+## License
+This project is licensed under the MIT License. See LICENSE for details.
+
+## Contact
+GlitchedNeon  
+Email: pizzownzore@gmail.com
